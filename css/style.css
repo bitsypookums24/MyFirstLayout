@@ -1,0 +1,192 @@
+/*My code starts on line 47 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My code starts here!*/
+
+html {
+    font-family: whitman, serif;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+body {
+    background-image: url("../images/Background.png");
+    background-size: 300px auto;
+}
+
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    flex-direction: row;
+    flex-basis: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #337F63;
+    opacity: 0.87;
+    width: 100%;
+    font-family: edita, serif;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #D3D3D3;
+    position: fixed;
+    z-index: 40;
+    top: 0;
+}
+
+.logo {
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 30pt;
+    text-shadow: 2px 2px 3px #356855;
+    flex-grow: 5;
+}
+
+.button {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.box {
+    flex-direction: row;
+    background-color: #a64674;
+    opacity: 0.87;
+    height: 245px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.title {
+    position: absolute;
+    left: 35%;
+    color: #F4ACAC;
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.left {
+    flex-grow: 1;
+}
+
+.right {
+    flex-grow: 2;
+}
+
+img {
+    left: 5%;
+    top: -20px;
+    width: 25%;
+    position: absolute;
+    z-index: 10;
+}
+
+.text, .list {
+    padding: 50px;
+    padding-bottom:30px;
+    color: #D3D3D3;
+    font-size: 15pt;
+    line-height: 1.3em;
+}
+
+.text {
+    position: absolute;
+    margin-right: 5%;
+    z-index: 10;
+    background-color: #841148;
+    margin-left: 20px;
+    margin-top: 55px;
+    padding-top: 30px;
+}
+
+.list {
+    background-color: #a64674;
+    margin-top: 30px;
+    margin-left: -50px;
+    margin-right: 0;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 12.5%;
+    list-style-type: disc;
+    position: absolute;
+    z-index: 20;
+}
+
+a:link {
+    color: #F4ACAC;
+}
+
+a:visited {
+    color: #F15E5E
+}
+
+.links {
+    background-color: #841148;
+    opacity: 0.87;
+    width: 55%;
+    margin-left: 15%;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+a img {
+    display: inline-block;
+    width: 65px;
+    top: 0px;
+    left: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
